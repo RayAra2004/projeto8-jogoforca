@@ -76,3 +76,15 @@
     border-radius: 8px;
     border: none;
 }
+
+.palavra{
+    position: absolute;
+    left: 600px;
+    top: 490px;
+    display: flex;
+}
+
+.palavra > div{
+    margin-right: 30px;
+    font-size: 50px;
+}
