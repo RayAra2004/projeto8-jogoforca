@@ -88,3 +88,11 @@
     margin-right: 30px;
     font-size: 50px;
 }
+
+.ganhou{
+    color: #27AE60;
+}
+
+.perdeu{
+    color: #ff0000;
+}

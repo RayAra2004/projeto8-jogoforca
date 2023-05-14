@@ -11,9 +11,7 @@ function App() {
   const [palavra, setPalavra] = useState('');
   const [caracteresPalavra, setCaracteresPalavra] = useState([]);
   const [revelacaoPalavra, setRevelacaoPalavra] = useState([]);
-
-  console.log(palavra);
-  console.log(qtdErros);
+  const [resultado, setResultado] = useState('');
 
   return (
     <div>
@@ -25,6 +23,10 @@ function App() {
         revelacaoPalavra = {revelacaoPalavra}
         setRevelacaoPalavra = {setRevelacaoPalavra}
         qtdErros = {qtdErros}
+        setQtdErros = {setQtdErros}
+        resultado = {resultado}
+        setResultado = {setResultado}
+        caracteresPalavra = {caracteresPalavra}
       />
 
       <Letras 

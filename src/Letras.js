@@ -49,7 +49,7 @@ function confereLetra(botoesEscolhidos, letra, caracteresPalavra, revelacaoPalav
     console.log(revelacaoPalavra)
     caracteresPalavra.forEach(l => {
         if(l === letra){
-            revelacaoPalavra[i] = letra
+            revelacaoPalavra[i] = letra.toUpperCase()
         }
         i++;
     });
