@@ -15,10 +15,10 @@ export default function Jogo(props){
     return(
         <div className="jogo">
             <div className="divForca">
-                <img src={vericaImg(qtdErros, setEstadoBotao, setResultado, caracteresPalavra, setRevelacaoPalavra)}></img>
+                <img data-test="game-image" src={vericaImg(qtdErros, setEstadoBotao, setResultado, caracteresPalavra, setRevelacaoPalavra)}></img>
             </div>
             <div className='divEscolherPalavra'>
-                <button onClick={() => 
+                <button data-test="choose-word" onClick={() => 
                     {
                         escolherPalavra(props.palavras, props.setPalavra, setCaracteresPalavra, setRevelacaoPalavra);
                         props.setEstadoBotao(false);
@@ -27,7 +27,7 @@ export default function Jogo(props){
                     }}
                     >Escolher Palavra</button>
             </div>
-            <div className='palavra'>
+            <div data-test="test-word" className='palavra'>
                 {revelacaoPalavra.map(caracter => <Palavra caracter = {caracter} resultado = {resultado}/>)}
             </div>
         </div>

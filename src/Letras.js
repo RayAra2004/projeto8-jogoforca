@@ -23,7 +23,7 @@ export default function Letras(props){
 function Letra(props){
     return(
         <div className="botao">
-            <button onClick={(event) => {
+            <button data-test="letter" onClick={(event) => {
                 confereLetra(
                     props.botoesEscolhidos, 
                     props.letra, 
