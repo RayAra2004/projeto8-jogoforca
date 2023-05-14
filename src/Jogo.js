@@ -27,7 +27,7 @@ export default function Jogo(props){
                     }}
                     >Escolher Palavra</button>
             </div>
-            <div data-test="test-word" className='palavra'>
+            <div data-test="word" className='palavra'>
                 {revelacaoPalavra.map(caracter => <Palavra caracter = {caracter} resultado = {resultado}/>)}
             </div>
         </div>
