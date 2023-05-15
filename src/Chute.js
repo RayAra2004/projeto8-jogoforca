@@ -1,13 +1,13 @@
 import fimJogo from "./fimJogo";
 
 export default function Chute(props){
-    const {chute, setChute, caracteresPalavra, setEstadoBotao, setResultado, setRevelacaoPalavra, setQtdErros} = props;
+    const {chute, setChute, caracteresPalavra, setEstadoBotao, setResultado, setRevelacaoPalavra, setQtdErros, estadoBotao} = props;
 
     return(
         <div className="chute">
             <p>Já sei a palavra!</p>
-            <input data-test="guess-input" onChange={event => setChute(event.target.value)} value={chute}></input>
-            <button data-test="guess-button" onClick={event => {
+            <input disabled= {estadoBotao} data-test="guess-input" onChange={event => setChute(event.target.value)} value={chute}></input>
+            <button disabled = {estadoBotao} data-test="guess-button" onClick={event => {
                 chutar(chute, setChute, caracteresPalavra, setEstadoBotao, setResultado, setRevelacaoPalavra, setQtdErros)
                 
             }

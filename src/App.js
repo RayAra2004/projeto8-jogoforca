@@ -49,6 +49,7 @@ function App() {
         setResultado = {setResultado}
         setRevelacaoPalavra = {setRevelacaoPalavra}
         setQtdErros = {setQtdErros}
+        estadoBotao = {estadoBotao}
       />
       
     </div>
