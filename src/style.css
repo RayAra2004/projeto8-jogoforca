@@ -1,6 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+
 .letras{
     position: relative;
-    top: 600px;
+    top: 490px;
     left: 211px;
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +48,7 @@
 
 .divForca{
     position: absolute;
-    top: 59px;
+    top: 20px;
     left: 38px;
 }
 
@@ -55,7 +59,7 @@
 
 .divEscolherPalavra{
     position: absolute;
-    top: 89px;
+    top: 39px;
     left: 830px;
 }
 
@@ -80,7 +84,7 @@
 .palavra{
     position: absolute;
     left: 600px;
-    top: 490px;
+    top: 370px;
     display: flex;
 }
 
@@ -95,4 +99,52 @@
 
 .perdeu{
     color: #ff0000;
+}
+
+.chute{
+    position: absolute;
+    top: 650px;
+    left: 250px;
+    display: flex;
+}
+
+.chute p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;  
+    color: #000000;
+}
+
+.chute input{
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    margin-left: 12px;
+    width: 353px;
+    height: 40px;
+}
+
+.chute button{
+    background: #E1ECF4;
+    border: 1px solid #7AA7C7;
+    border-radius: 3px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #3C76A1;
+    width: 100px;
+    height: 40px;
+    margin-left: 15px;
 }

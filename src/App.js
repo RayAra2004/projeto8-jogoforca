@@ -4,6 +4,7 @@ import Letras from './Letras';
 import palavras from './palavras';
 import './reset.css';
 import './style.css';
+import Chute from './Chute';
 
 function App() {
   const [estadoBotao, setEstadoBotao] = useState(true);
@@ -12,6 +13,7 @@ function App() {
   const [caracteresPalavra, setCaracteresPalavra] = useState([]);
   const [revelacaoPalavra, setRevelacaoPalavra] = useState([]);
   const [resultado, setResultado] = useState('');
+  const [chute, setChute] = useState('');
 
   return (
     <div>
@@ -30,12 +32,22 @@ function App() {
       />
 
       <Letras 
-        estadoBotao = {estadoBotao} 
+        estadoBotao = {estadoBotao}
         setEstadoBotao = {setEstadoBotao}
         caracteresPalavra = {caracteresPalavra}
         revelacaoPalavra = {revelacaoPalavra}
         setRevelacaoPalavra = {setRevelacaoPalavra}
         qtdErros = {qtdErros}
+        setQtdErros = {setQtdErros}
+      />
+
+      <Chute 
+        chute = {chute}
+        setChute = {setChute}
+        caracteresPalavra = {caracteresPalavra}
+        setEstadoBotao = {setEstadoBotao}
+        setResultado = {setResultado}
+        setRevelacaoPalavra = {setRevelacaoPalavra}
         setQtdErros = {setQtdErros}
       />
       

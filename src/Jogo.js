@@ -5,11 +5,12 @@ import forca3 from './assets/img/forca3.png';
 import forca4 from './assets/img/forca4.png';
 import forca5 from './assets/img/forca5.png';
 import forca6 from './assets/img/forca6.png';
+import fimJogo from './fimJogo';
 
 export default function Jogo(props){
     const {revelacaoPalavra, setEstadoBotao, setQtdErros, qtdErros, setCaracteresPalavra, setRevelacaoPalavra, resultado, setResultado, caracteresPalavra} = props;
     
-    if(!revelacaoPalavra.includes('_') && revelacaoPalavra.length > 0){
+    if(JSON.stringify(revelacaoPalavra) === JSON.stringify(caracteresPalavra)){
         fimJogo(setEstadoBotao, 0, setResultado, caracteresPalavra, setRevelacaoPalavra)
     }
     return(
@@ -83,13 +84,3 @@ function vericaImg(qtdErros, setEstadoBotao, setResultado, caracteresPalavra, se
     }
 }
 
-function fimJogo(setEstadoBotao, res, setResultado, caracteresPalavra, setRevelacaoPalavra){
-    if(res === 1){
-        setEstadoBotao(true);
-        setResultado('perdeu')
-        setRevelacaoPalavra(caracteresPalavra)       
-    }else{
-        setEstadoBotao(true);
-        setResultado('ganhou')
-    }
-}

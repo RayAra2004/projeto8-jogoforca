@@ -25,8 +25,8 @@ function Letra(props){
         <div className="botao">
             <button data-test="letter" onClick={(event) => {
                 confereLetra(
-                    props.botoesEscolhidos, 
-                    props.letra, 
+                    props.botoesEscolhidos,
+                    props.letra,
                     props.caracteresPalavra, 
                     props.revelacaoPalavra,
                     props.setRevelacaoPalavra,
@@ -46,10 +46,9 @@ function Letra(props){
 
 function confereLetra(botoesEscolhidos, letra, caracteresPalavra, revelacaoPalavra, setRevelacaoPalavra, qtdErros, setQtdErros){
     let i = 0;
-    console.log(revelacaoPalavra)
     caracteresPalavra.forEach(l => {
         if(l === letra){
-            revelacaoPalavra[i] = letra.toUpperCase()
+            revelacaoPalavra[i] = letra
         }
         i++;
     });
